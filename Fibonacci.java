@@ -1,5 +1,5 @@
 package recursion;
-
+import java.util.Scanner;
 public class Fibonacci {
 	static int a = 0, b = 0, c = 1;
 	public static void print(int n) {
@@ -10,13 +10,13 @@ public class Fibonacci {
 			c = a + b;
 			print(n-1);
 		}
-		return ;
-		
+		return ;	
 	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		print(5);
+	public static void main(String[] args){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number:-\n");
+		int x=sc.nextInt();
+		print(x);
 
 	}
 
